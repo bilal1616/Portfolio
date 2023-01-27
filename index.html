@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio Sitem</title>
+    </head>
+    <body>
+        <!--===== HEADER Nav-Bar İçerik Kısmı =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Bilal</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Anasayfa</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Hakkımda</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Yetenekler</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Çalışmalar</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">iletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME Anasayfa Kısmı =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Merhaba,<br>Ben <span class="home__title-color">Bilal</span><br>Full-Stack Developer</h1>
+
+                    <a href="#" class="button">İletişim</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="85" y="60" href="assets/img/profile.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT Hakkımda Kısmı =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Hakkımda</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Bilal Gönül<br> Full-Stack Developer <br>(Front-End & Back-End)</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS Yetenekler Kısmı =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Yetenekler</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesyonel Yetenekler</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZZJREFUSEvNlv0xBUEQxH8vAjJABIgAGRABGSACZEAEZEAGvAiQARkQAdVVt1Vt7d7O3buqe/vP+7jZ6Z2ent5bMNNazITL2gHvARsTsfENvOW5ahW/AAcTAS+Bw7UHvgauJqr4BlC+P6tG9VoAfwA7A6v/MnFeArfRiiWGZwseOnY/tvcIkFhDVNeAz4DTQPWu4kHAmuNXA9jvZlHA9wFgD0l7QxUrqERXzkTkDMU29fWu2acKakgffcBS81aXvKjMCrCP4iewXYrrA3bb1Pd/yswSyii0HLholwqKAr8DT13imqOlXJrZ8y52FPCDjY4n8Bakov25M3UHXAylukaZKtJYpWtT157+S37swEWfblHd6pVmXSu/a52RUcDHwKPRpN+iVD5cWpvdHZ60oJgT00bYQGpmoQqVXJRKUHph0KESAw5QtMsW1WNcKmdiFHBumxF7zGOq49q67uQ6qlxU6rP1AiiFqwWpFRJacbWA801+iN3uoczFwULMDAX2pGJDCq+pvPcAqwCHKpuK6pXAfPNsFf8CtthWH06HmKEAAAAASUVORK5CYII="/>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYJJREFUSEvtle0xBEEQhp+LABkQgRIBIkAEiIAMkAERIAJEcGRABGSACKi3aqaq9c3n7ar9wfzZq9vZfqbf7n5nxkRrNhGXf3BU/hHYHqkMT8COj5WT+gY4HAl8Cxy1gs+Bs5HAF4Di/Vi5jCcD7wN35oi93f9lvj0A7lszVjPMRwLvAmrWJqk9eKFGifqrewVYBd7N+y6w/7ilz44BTUOTWqXa2Tq1gGNmvwbeAN4KJ9HMXof3n0H6he2ljHPulayZiWxHMela2rsMWHVMZSyj0BoM1uztGcmew++ch8ck7HcPgDyhS+rcyXWATRfJSmpLlLTLmtQ58CVw4sBXwGn4bzDYdqey3HKweNV5V7JjGGe7S2o/j8pUV1ystQ+2HnpC++LKTkCpqz04BvsIph+NX/vUQAL7tRRYgV5bLKuwZw3QQbuk1uZe2/SArKK1e1ZZRyn1XKkoIItUs6kMemattQb2HHuIOMsvDtZUnV6wDSo1VL9kDWv0IeBa7OL7vwf+BtzMVB/JETIcAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAThJREFUSEvtl9tNw0AQRU8qgBKgAugA0gFUkNABHQAdkApCCXQAVEBSAdABVAA60gzaWDYfdpbkwytF8cb2nLl3Zx+ZsKM22RGXvQEfAieVXFgDnxm7qfgceKoEngLPIzgdGK3eZp2NxbXh5lhcXcX1AuiO7Tu+XRLnwCr6F8ADcBD9rRRXG/gYeAeOYk12XTaRZU1wJiL0LcCqvS4sq6JYpSq2CZy1jFEVsJyrgHqt8ttGAtXAAoUtin23+hiXzlpU98Bd/OgefAb0VvwVVesJpVnV3hNmMTWnjy7c9AV/xLxVjcGdq4/AKfAKXEbfsdXeVK1onzXZ3orL4klr00ZBwn+PNvFAqrXbG+zLBs7gKlNh2VTnx0OjbpT3B4GH7M9/gjPTIYCud3Wi83hbA9gac2/+Sfyb4h86KG0fq02AugAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvVluExBEEQhb+LgAwQASJABjIgBCJABIRABIgAESACQiAC6qva2XJ7M7N9N1t1pauu7sfOzOt+/V7PzFhTzNaEy78DPgR+Ora+gbdlmVum4mPgAtgrgDwAV9EkosBW+ATcAdvAQQH8C9gHPscYiAJfdtW6PiVROvscuJka+BnYrNAtnnSbaDWiFZ8C/oaRo7wZWDHtjiSeq0xge7zV7VUXCz3PVSyVCqmk3jEWBVYHiY2s4HLAt8DJ2OmV70Ngl1r1XKtywGa40QB8BJh8ojodNYc1BJbe1wbQd0BtfGTO0N/9hBsC1zyaRqOWyoUCUhtOsJw+ZKLfGwV+7HpUG5kmY+KlqAKXqNZWCmRVpZtMlWoXDMVl3/TrfUPvbZM27SNip5euN9K8aixMs9IAUX3JDq3A7lfpMlmt2I/SouH9V61ehbmKFUwtBMs+EqKXRLoWI1Q3XxJ/QcaAtZvVOWonBT4DrgMe9R02KXDqdWmG20crdoDsTPn0sVgFJuUePrwA9Knj0O+hF2dUXDmWZSExERHd3JoW4KXBIj5uOjSyeW0V/wKOqFUf7Z9RBQAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtBJREFUSEvNljmsTVEUhr/XUaFUoVKQGKKgEFREg87QEEI0hkokElSGEEMpT2gMHRIRHaKgEEOCFqEQDRKFRsj3stbNvvudcw9Xcd9OTm7uPmuv/1//GvYZY0RrbES4TGngY8DRUOYhcBzwt1yrw8Zf10Hg/CA1uyLW0VVgMfAN2B4Or4RzfQvg/oGwnQm8jL2aYI9LF7BOBTTqXDq+DfwAZgC/gI1hlzbaayeZxtUFLGOdNDH/CfwGpjd4VgGflH6Syd8AJ3h5WPnnxsY7YEflWbKCDg2cEpdSK18ZjcQkUhZTU4r6uHVFvA04DVwK9rOB+S1pewt8ibTsBvYAd/81x0q0P4rGs6eAp8AZ4DJwonJ4ElgbrbYcOBTvLcILTTVSR2wl3gLmRVF50EcpfafEtpZLG5c5dtlCKbdVrq2/pkmbTWXll8A6fgC8ikMZlA52AgvjsDk1in1hcDHUyZ7/BIwH2fQh8UXAmgQvgZOhLMsloc8RkTIuAF5XNpJ6E+lQkWkNuc0ilETfrG4D1s6e9eA6YAnwvHK8FHgB3AckJ9l6lWnrA9b4fcxcpSyl3hVSK6e5vA5sCYMbwNaoep1/BM5WUtuCPjl6J91OvlCKr1Eod6K4dOjAWBV5EnNlAD+OXxXxkbzpysfumBV1I+mJ1dbHOfQFcx4fBp4A14AjVTT6MRp7dy+wItrte5Cw0ifyWq6uAbIZsGrvFRE3pK+39SjA1kfV32wz7gJuumXc21DMZ6MxFeVY/e+RqUPzUjo1CPetA4lblHULam+91Ps9AboibrsWs7e9Fp3f3tnlEtC8D307KWM5CnUu6DlgWSA9i6+REtyILUyLtHF1RSxzv7dy1Plf0HKs5jj0TlahHL1+m5mSoYA9pGOLSYcfQsLaoYQsqDkhu/3fGu2gPq5ZKptS1rms7SSXE3BQ203t7+qBzId92VVcw/rtPDcy4D+TYqMfSVHEMgAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">REACT</span>
+                            </div>
+                            <div class="skills__bar skills__react">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWBJREFUSEvNluFNwzAQRl8noEwAG5ROAGxQJihMQLtBN4ANgAmgEwATlE5Au0E7AeirbGQZx7HiOOn9iaJEfvfdne9uQE826InLUYLPgbPMiGyBTeiMkOIL4AnQsw37AObAl3tYCKwfRm0QnTMEv46BFd7vlqH2uFNgZ198xVfAeyGwFEv5wVLBez9HAecuaxxuBP4EFI2YKU1vkfrIBt9610x5ezH5001YVXiXDVae/LAugYkBypGTALwI2E3FT5eK74BnYAY8lAIrj0OvOehVoVbHc7+5PmSHWmA3h+5VU+EJHrJscKi4NAjGprIV8mlXxSWOzXOV6iKKBb4xDUS5fu1C8doAFwb2CNyXAMfaZmzINAq1ZrTuaJWpTyvEtnu1VtU18yHpc1Rxb4uAXA/d0yRJkZ/+jdWqZU+VWTfYU50RVPVRu+zZA9VzczdNwf72LNfTo1zoU0PZ6L/eFP8CFOhkH1c1KJMAAAAASUVORK5CYII="/>
+                                <span class="skills__name">BOOTSTRAP</span>
+                            </div>
+                            <div class="skills__bar skills__bootstrap">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhpJREFUSEvVlo0xBUEQhPtFgAgQASJABIgAGRABMiACRIAIEAEZIAMioD61c7U7Zu9uuapXpurq/ezO9nTPz95Mc7LZnHD1r4EXJfG8tqjXyhiAdwdwKomnyVqBDyRdOQQCIaAmqwFHzLYk8Xh2n5KWAiV6A4mAAQXg1nk+JLaeMcBnrXJHwADC6tkB1wDYvylpO/CpsvbAML2XfrTZuqQnSReSjtxptkZV7/WAF+nzwMjJBg7LbUXSS2qZ1YAGRXeZ8nwu6TprL87bTanrOsIDIyeRR4ezhiEpAXpDLfK/7BbeEnCRuhzYZMYvyj1g5LIWmOFxjikGWBRkAYAcN8l7I8iVyckWmB02Na7bXGN8LIlceYPBWvqzFbwYrTVgAGDtDQmRbiEt8B3mQ3MaPxTthk9UXAZWKyIPbtLTz49ugpHv/USC79WqxnknIfcVEeBIbbL3pZtgYFtcLp5xXkAcFg2MHIT9DJQogLvUu37Efvt7YLtXLYfsIYehs6OJCuY/lPOwX/O2srMpCi6CvxjTrwuodi3CkKLIjfzD3r8IjAmGlNABg8BIxkafO0Dpb3I/JgBYMsPJdzEX+t5AALcrL2LFGsHR8x/pk5Zhplvf8psLA8aFjXn1Ib8nY/QM9lRfEMYAcx6SIZX1+FAc9C5t5l8mOr+xwOZAAFQ9D6mgBkxm9iA/z6/aaYjNJOutjCcBjSbXZAcPHfQFs0B1HwkHLtYAAAAASUVORK5CYII="/>
+                                <span class="skills__name">JQUERY</span>
+                            </div>
+                            <div class="skills__bar skills__jquery">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYJJREFUSEvtlu01BEEQRe9mIANEgAgQASIgAzJABIgAEZABMiACRIAMnHvOzJ7a0nZndnvWH/Vn5vT09KuPV69rxB/Z6I9wWQT4CFgNjt8Cb8AacBjW34GbHOAiwI/AdjhwF3BtB3gI60/N2gT2P3Afrv2W6k3gMhz0DJwso8adnO9TY0mzAaw07DUKo2utJZff3dfaF2DUvcjlIcdNqnyfZtVYLZBtEaNaCvA9sFdAemnSHcXDbVUiVn1eE6jKZF0/m/VBBOQMOE2ypzPRBgHOaT4HdGZw4BzN0oBVHtuotauC+gySakl0kVK7lYRgEGB7+CMBy2bvVeuv+R4JV6WdPDgze4Zwjft4H7gLm0v8mDmB5Fp3Ua7s8FzAAimZjjk+48QRxd96m3pHn+zs3MCzUpy/Cx7l9CDwYry3z7XYxYFSN6w3mZj4vyaw5bhO3hUHPffUAi7dZHLA4eHHEFAT2H6Wze08PRW0JnCbYR2wj2V4e30WuVEr1V2INxi5eoF/AyfMcR/qi4aIAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">DJANGO</span>
+                            </div>
+                            <div class="skills__bar skills__django">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="assets/img/work7.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK Çalışmalar Kısmı =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Çalışmalar</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT İletişim Kısmı=====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">İletişim</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="mailto:bilalgonul.1616@gmail.com" method="post" class="contact__form">
+                        <input type="text" placeholder="İsminiz" name="Isminiz" class="contact__input">
+                        <input type="mail" placeholder="E-mail" name="E-mail" class="contact__input">
+                        <textarea type="text" name="metin" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Gönder" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER Menü Kısmı =====-->
+        <footer class="footer">
+            <div class="footer-contact">
+                <h1 class="footer-contact-heading">İletişim Adresleri</h1>
+                <p class="footer-contact-info">E-mail: bilalgonul.1616@gmail.com</p>
+                <p class="footer-contact-info">Telefon: +90 541 542 90 14</p>
+            </div>
+            <br><br>
+            <div class="footer__social">
+                <h1 class="footer-social-follow-heading">Sosyal Medya Adresleri</h1>
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Bilal Gönül. Tüm Hakları Saklıdır</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL Sayfa Kaydırma Kısmı =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS Javascript Kütüphane Tanımlama =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
